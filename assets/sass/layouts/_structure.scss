@@ -41,7 +41,7 @@ html {
 		@include span-columns( 4 );
 	}
 	@include media($md) {
-		@include span-columns( 4 );
+		@include span-columns( 6 );
 		@include omega( block );
 	}
 	margin: 0 auto;

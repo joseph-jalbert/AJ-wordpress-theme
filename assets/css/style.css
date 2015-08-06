@@ -585,32 +585,32 @@ h1 {
   font-size: 75px;
   font-size: 4.6875rem;
   color: #000;
-  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif; }
+  font-family: "Raleway", sans-serif; }
 
 h2 {
   font-size: 50px;
   font-size: 3.125rem;
-  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif; }
+  font-family: "Raleway", sans-serif; }
 
 h3 {
   font-size: 35px;
   font-size: 2.1875rem;
-  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif; }
+  font-family: "Raleway", sans-serif; }
 
 h4 {
   font-size: 24px;
   font-size: 1.5rem;
-  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif; }
+  font-family: "Raleway", sans-serif; }
 
 h5 {
   font-size: 20px;
   font-size: 1.25rem;
-  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif; }
+  font-family: "Raleway", sans-serif; }
 
 h6 {
   font-size: 18px;
   font-size: 1.125rem;
-  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif; }
+  font-family: "Raleway", sans-serif; }
 
 blockquote {
   background-color: #f7f7f7;
@@ -623,7 +623,7 @@ cite {
 
 strong, b {
   color: #000;
-  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif; }
+  font-family: "Raleway", sans-serif; }
 
 a, a:visited {
   -webkit-transition: all 200ms ease-in-out;
@@ -643,7 +643,7 @@ ol:nth-child(n+2) {
   margin-bottom: 0; }
 
 .entry-title {
-  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-family: "Raleway", sans-serif;
   text-align: center; }
   @media screen and (min-width: 200px)  {
     .entry-title {
@@ -670,7 +670,7 @@ ol:nth-child(n+2) {
   border-radius: 0;
   box-shadow: none;
   clear: both;
-  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-family: "Raleway", sans-serif;
   margin: 10px 0;
   padding: 20px;
   -webkit-transition: all 200ms ease-in-out;
@@ -680,14 +680,14 @@ ol:nth-child(n+2) {
     border: solid 5px #222222;
     border-radius: 0;
     box-shadow: none;
-    font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+    font-family: "Raleway", sans-serif;
     padding: 20px; }
   #submit:hover {
     background: black;
     border: solid 5px #222222;
     border-radius: 0;
     box-shadow: none;
-    font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+    font-family: "Raleway", sans-serif;
     padding: 20px; }
   #submit:hover {
     background-color: #555; }
@@ -698,7 +698,7 @@ ol:nth-child(n+2) {
   border-radius: 0;
   box-shadow: none;
   clear: both;
-  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-family: "Raleway", sans-serif;
   margin: 10px 0;
   padding: 20px;
   -webkit-transition: all 200ms ease-in-out;
@@ -708,14 +708,14 @@ ol:nth-child(n+2) {
     border: solid 5px #999999;
     border-radius: 0;
     box-shadow: none;
-    font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+    font-family: "Raleway", sans-serif;
     padding: 20px; }
   .neat-button:hover {
     background: #f2f2f2;
     border: solid 5px #999999;
     border-radius: 0;
     box-shadow: none;
-    font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+    font-family: "Raleway", sans-serif;
     padding: 20px; }
 
 .neat-3d-button {
@@ -740,7 +740,7 @@ ol:nth-child(n+2) {
     border-bottom: solid 3px #999999;
     border-radius: 0;
     box-shadow: none;
-    font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+    font-family: "Raleway", sans-serif;
     padding: 20px; }
   .neat-3d-button:hover {
     background: #f2f2f2;
@@ -750,7 +750,7 @@ ol:nth-child(n+2) {
     border-bottom: solid 3px #999999;
     border-radius: 0;
     box-shadow: none;
-    font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+    font-family: "Raleway", sans-serif;
     padding: 20px; }
 
 input[type="submit"] {
@@ -759,7 +759,7 @@ input[type="submit"] {
   border-radius: 0;
   box-shadow: none;
   clear: both;
-  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-family: "Raleway", sans-serif;
   margin: 10px 0;
   padding: 20px;
   -webkit-transition: all 200ms ease-in-out;
@@ -771,14 +771,14 @@ input[type="submit"] {
     border: solid 5px #222222;
     border-radius: 0;
     box-shadow: none;
-    font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+    font-family: "Raleway", sans-serif;
     padding: 20px; }
   input[type="submit"]:hover {
     background: black;
     border: solid 5px #222222;
     border-radius: 0;
     box-shadow: none;
-    font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+    font-family: "Raleway", sans-serif;
     padding: 20px; }
   input[type="submit"]:hover {
     background-color: #999999;
@@ -840,7 +840,7 @@ body {
       float: left;
       display: block;
       margin-right: 4.347826087%;
-      width: 65.2173913043%;
+      width: 100%;
       margin-right: 0; }
       #primary:last-child {
         margin-right: 0; } }
@@ -878,7 +878,7 @@ body {
 .site-branding {
   text-align: center; }
   .site-branding .site-title {
-    font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+    font-family: "Raleway", sans-serif;
     padding: 40px; }
     @media screen and (min-width: 200px)  {
       .site-branding .site-title {
@@ -886,12 +886,12 @@ body {
         font-size: 2.1875rem; } }
     @media screen and (min-width: 480px)  {
       .site-branding .site-title {
-        font-size: 55px;
-        font-size: 3.4375rem; } }
+        font-size: 40px;
+        font-size: 2.5rem; } }
     @media screen and (min-width: 768px)  {
       .site-branding .site-title {
-        font-size: 75px;
-        font-size: 4.6875rem; } }
+        font-size: 45px;
+        font-size: 2.8125rem; } }
     .site-branding .site-title a, .site-branding .site-title a:visited {
       line-height: 1; }
   .site-branding .site-description {
@@ -949,7 +949,7 @@ body {
     z-index: 2;
     overflow: hidden;
     color: #fff;
-    background: #000;
+    background: #999;
     border-bottom: 1px solid rgba(0, 0, 0, 0.15);
     white-space: nowrap; }
     .flexnav li a:hover {
@@ -1001,7 +1001,7 @@ body {
   position: relative;
   display: block;
   padding: 1em;
-  background: #000;
+  background: #999;
   color: #fff;
   cursor: pointer;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
@@ -1058,7 +1058,7 @@ body {
       list-style: none;
       float: left ;
       display: block;
-      background-color: #000;
+      background-color: #999;
       overflow: visible;
       width: 25%; }
     .flexnav li a {
@@ -1104,7 +1104,7 @@ body {
     list-style: none;
     float: left ;
     display: block;
-    background-color: #000;
+    background-color: #999;
     width: 20%;
     min-height: 50px;
     overflow: visible; }

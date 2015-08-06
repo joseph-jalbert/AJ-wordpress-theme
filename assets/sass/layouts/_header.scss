@@ -8,10 +8,10 @@
 			@include fontSize(35px);
 		}
 		@include media($smbg) {
-			@include fontSize(55px);
+			@include fontSize(40px);
 		}
 		@include media($md) {
-			@include fontSize(75px);
+			@include fontSize(45px);
 		}
 
 		a,a:visited {
