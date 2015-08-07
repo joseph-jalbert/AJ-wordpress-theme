@@ -1,6 +1,6 @@
 /* Flexnav Base Styles */
 
-$nav_text: #fff;
+$nav_text: gray;
 $top_level: #999;
 $second_level: #333;
 $third_level: #666;
@@ -22,7 +22,8 @@ $fourth_level: #999;
 	}
 
 	ul {
-		@include padding-left(0);
+		// @include padding-left(20);
+		margin-left: 20%;
 	}
 
 	&.flexnav-show {
@@ -48,17 +49,12 @@ $fourth_level: #999;
 	li a {
 		position: relative;
 		display: block;
-		padding: .80em;
 		z-index: 2;
 		overflow: hidden;
 		color: $nav_text;
-		background: $top_level;
-		border-bottom: 1px solid rgba(0,0,0,.15);
 		white-space: nowrap;
-
 		&:hover {
-			background: #fff;
-			color: $link-color !important;
+			color: green;
 		}
 		 &:focus {
 		 	background: #fff;
@@ -195,16 +191,10 @@ $fourth_level: #999;
 			list-style: none;
 			@include float(left);
 			display: block;
-			background-color: $top_level;
 			overflow: visible;
-			width: 25%;
+			width: 10%;
 		}
-		li a {
-			border-bottom: 1px solid #acaca1;
-			border-left: 1px solid #acaca1;
-			border-right: 1px solid #acaca1;
-			border-top: 1px solid #acaca1;
-		}
+		
 		li > ul {
 			position: absolute;
 			top: auto;

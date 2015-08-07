@@ -72,17 +72,16 @@ body{background-color:#fff;color:#000;font-family:"Georgia","Cambria","Times New
 .site-branding{text-align:center}.site-branding .site-title{font-family:"Raleway",sans-serif;padding:40px}
 .site-branding .site-title a,.site-branding .site-title a:visited{line-height:1}.site-branding .site-description{padding:25px 0;font-size:20px;font-size:1.25rem;font-family:"Georgia","Cambria","Times New Roman","Times",serif;font-style:italic}
 .flexnav{overflow:hidden;margin:0 auto;width:100%;max-height:0;-webkit-transition:all .5s ease-in-out,width 0,height 0,top 0,left 0;transition:all .5s ease-in-out,width 0,height 0,top 0,left 0;-webkit-transform-style:preserve-3d}
-.flexnav.opacity{padding-right:0}.flexnav ul{padding-right:0}.flexnav.flexnav-show{max-height:2000px;-webkit-transition:all .5s ease-in-out;transition:all .5s ease-in-out}
+.flexnav.opacity{padding-right:0}.flexnav ul{margin-left:20%}.flexnav.flexnav-show{max-height:2000px;-webkit-transition:all .5s ease-in-out;transition:all .5s ease-in-out}
 .flexnav.one-page{position:fixed;top:50px;left:5%;max-width:200px}.flexnav li{font-size:100%;position:relative;overflow:hidden}
-.flexnav li a{position:relative;display:block;padding:.8em;z-index:2;overflow:hidden;color:#fff;background:#999;border-bottom:1px solid rgba(0,0,0,0.15);white-space:nowrap}
-.flexnav li a:hover{background:#fff;color:#f00 !important}.flexnav li a:focus{background:#fff}
-.flexnav li ul{display:none;margin-bottom:0;padding-right:0;width:100%;z-index:5}
+.flexnav li a{position:relative;display:block;z-index:2;overflow:hidden;color:gray;white-space:nowrap}
+.flexnav li a:hover{color:green}.flexnav li a:focus{background:#fff}.flexnav li ul{display:none;margin-bottom:0;padding-right:0;width:100%;z-index:5}
 .flexnav li ul li{font-size:100%;position:relative;overflow:hidden}.flexnav li ul li:last-child{border-bottom:1px solid #666}
 .flexnav li ul.flexnav-show li{overflow:visible}.flexnav li ul li a{display:block;background:#333}
 .flexnav ul li ul li a{background:#666}.flexnav ul li ul li ul li a{background:#999}
 .flexnav .touch-button{position:absolute;z-index:999;top:0;left:0;width:50px;height:100%;display:inline-block;background:#acaca1;background:rgba(0,0,0,0.075);text-align:center}
 .flexnav .touch-button:hover{cursor:pointer}.flexnav .touch-button .navicon{position:relative;top:1.4em;font-size:12px;color:#666}
-.menu-button{position:relative;display:block;padding:1em;background:#999;color:#fff;cursor:pointer;border-bottom:1px solid rgba(0,0,0,0.2);width:100%}
+.menu-button{position:relative;display:block;padding:1em;background:#999;color:gray;cursor:pointer;border-bottom:1px solid rgba(0,0,0,0.2);width:100%}
 .menu-button.one-page{position:fixed;top:0;left:5%;padding-left:45px}.menu-button .touch-button{background:transparent;position:absolute;z-index:999;top:0;left:0;width:50px;height:50px;display:none;text-align:center}
 .menu-button .touch-button .navicon{font-size:16px;position:relative;top:1em;color:#666}
 .menu-button:hover{color:#fff}.menu-button:hover i.navicon{color:#fff}.menu-button:hover i.navicon:after{color:#fff;content:'Menu'}
@@ -156,8 +155,7 @@ footer .footer-right:last-child{margin-right:0}.screen-reader-text{position:abso
 .page-template-page-templatestemplate-left-col-php #main #secondary:last-child{margin-right:0}
 .page-template-page-templatestemplate-right-col-php #secondary{float:left;margin-left:1.5%}
 }@media all and (min-width:800px){body.one-page{padding-top:70px}.flexnav{overflow:visible}
-.flexnav.opacity{opacity:1}.flexnav.one-page{top:0;left:auto;max-width:1080px}.flexnav li{position:relative;list-style:none;float:right;display:block;background-color:#999;overflow:visible;width:25%}
-.flexnav li a{border-bottom:1px solid #acaca1;border-left:1px solid #acaca1;border-right:1px solid #acaca1;border-top:1px solid #acaca1}
+.flexnav.opacity{opacity:1}.flexnav.one-page{top:0;left:auto;max-width:1080px}.flexnav li{position:relative;list-style:none;float:right;display:block;overflow:visible;width:10%}
 .flexnav li>ul{position:absolute;top:auto;right:0}.flexnav li>ul li{width:100%}.flexnav li ul li>ul{margin-right:100%;top:0}
 .flexnav li ul li a{border-bottom:0}.flexnav li ul.open{display:block;opacity:1;visibility:visible;z-index:1}
 .flexnav li ul.open li{overflow:visible;max-height:100px}.flexnav li ul.open ul.open{margin-right:100%;top:0}
