@@ -38,7 +38,6 @@
 		<?php tha_header_top(); ?>
 			<div class="site-branding">
 				<div class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></div>
-				<div class="site-description"><?php bloginfo( 'description' ); ?></div>
 			</div>
 
 			<nav id="primary-nav" role="navigation" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
