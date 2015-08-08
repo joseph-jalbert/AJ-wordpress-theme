@@ -876,7 +876,7 @@ body {
 	6.1 Layout and Structure
 	--------------------------------------------------------------*/
 .site-branding {
-  text-align: center; }
+  margin-left: 20%; }
   .site-branding .site-title {
     font-family: "Raleway", sans-serif;
     padding: 40px; }
@@ -1235,6 +1235,9 @@ nav.post-navigation {
 /*--------------------------------------------------------------
 	6.3 Content
 	--------------------------------------------------------------*/
+#post-25 > div > p {
+  margin-left: 20%; }
+
 .sticky {
   background: #f1f1f1; }
 
