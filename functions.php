@@ -347,6 +347,20 @@ if ( ! function_exists( 'aj_add_footer_divs' ) ) :
 	add_action( 'tha_footer_bottom', 'aj_add_footer_divs' );
 endif;
 
+//ADD ISOTOPE
+
+
+function add_isotope() {
+    wp_register_script( 'isotope', get_template_directory_uri().'/assets/js/vendor/isotope.pkgd.js', array('jquery'),  true );
+    wp_register_script( 'isotope-init', get_template_directory_uri().'/assets/js/isotope.js', array('jquery', 'isotope'),  true );
+    wp_register_style( 'isotope-css', get_stylesheet_directory_uri() . '/css/isotope.css' );
+ 
+    wp_enqueue_script('isotope-init');
+    wp_enqueue_style('isotope-css');
+}
+ 
+add_action( 'wp_enqueue_scripts', 'add_isotope' );
+
 add_action( 'tha_head_bottom', 'aj_add_selectivizr' );
 function aj_add_selectivizr()
 {

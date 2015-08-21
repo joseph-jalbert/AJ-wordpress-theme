@@ -122,6 +122,13 @@ object {
 	max-width: 100%;
 }
 
+/* =Structure/Scaffolding
+-------------------------------------------------------------- */
+
+masonry: {
+  columnWidth: 50
+}
+
 /* =Comments
 ----------------------------------------------- */
 .comment-content a {
