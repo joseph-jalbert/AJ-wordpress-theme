@@ -122,12 +122,21 @@ object {
 	max-width: 100%;
 }
 
-/* =Structure/Scaffolding
--------------------------------------------------------------- */
+/* =Masonry
+----------------------------------------------- */
 
-masonry: {
-  columnWidth: 50
+div#container {
+	margin-top: 10%;
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
 }
+
+div.photo {
+	width: 22%;
+}
+
+
 
 /* =Comments
 ----------------------------------------------- */
