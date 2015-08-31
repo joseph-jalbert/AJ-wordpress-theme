@@ -12,20 +12,21 @@ get_header(); ?>
 
 <?php 
 
+
 $images = get_field('drawings');
 
+
 if( $images ): ?>
-    <div id="container">
+    <div class= "popup-gallery" id="container">
         <?php foreach( $images as $image ): ?>
-            <div class="photo">
-                <a href="<?php echo $image['url']; ?>">
-                     <img src="<?php echo $image['sizes']['medium']; ?>" alt="<?php echo $image['alt']; ?>" />
-                </a>
-                <p><?php echo $image['caption']; ?></p>
-            </div>
+            <a class= "pop" href="<?php echo $image['url']; ?>" class="lightbox-link" title="<?php echo $image['caption']; ?>"
+            data-description="<?php echo $image['description']; ?>">
+                <div class="image-wrap photo">
+                    <img src="<?php echo $image['sizes']['medium']; ?>" alt="<?php echo $image['alt']; ?>" />
+                </div>
+            </a>
         <?php endforeach; ?>
     </div>
 <?php endif; ?>
 
-
-
+<?php get_footer(); ?>

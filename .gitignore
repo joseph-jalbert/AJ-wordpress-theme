@@ -2,6 +2,10 @@
 ########
 /assets/css/*
 
+# lightbox #
+#########
+/assets/js/lightbox.js
+
 # Packages #
 ############
 *.7z
