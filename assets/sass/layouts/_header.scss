@@ -1,8 +1,8 @@
 .site-branding {
-	margin-left: 20%;
+	margin-left: 17%;
 	.site-title {
 		font-family: $title;
-		padding: 40px;
+		padding: 40px 0px;
 
 		@include media($sm) {
 			@include fontSize(35px);
