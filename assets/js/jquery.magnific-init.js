@@ -1,5 +1,5 @@
-jQuery(document).ready(function($) {
-	$('.popup-gallery').magnificPopup({
+jQuery(function() {
+	jQuery('.popup-gallery').magnificPopup({
 		delegate: 'a',
 		type: 'image',
 		tLoading: 'Loading image #%curr%...',

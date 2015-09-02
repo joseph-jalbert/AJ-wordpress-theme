@@ -30,14 +30,6 @@
 </div><!-- #page -->
 
 
-<!-- Add Scripts for Lightbox(Magnific) and Masonry(Isotope)  -->
-
-<script type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/js/jquery.magnific-popup.js"></script>
-<script type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/js/jquery.magnific-init.js"></script>
-<script type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/js/vendor/isotope.pkgd.js"></script>
-<script type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/js/isotope.js"></script>
-
-
 <?php tha_body_bottom(); ?>
 <?php wp_footer(); ?>
 </body>

@@ -347,6 +347,46 @@ if ( ! function_exists( 'aj_add_footer_divs' ) ) :
 	add_action( 'tha_footer_bottom', 'aj_add_footer_divs' );
 endif;
 
+/**
+ * Isotope JS for masonry layout
+ */
+
+
+function add_isotope() {
+    wp_register_script( 'isotope', get_template_directory_uri().'/assets/js/vendor/isotope.pkgd.js', array('jquery'),  true );
+    wp_register_script( 'isotope-init', get_template_directory_uri().'/assets/js/isotope.js', array('jquery', 'isotope'),  true );
+    // wp_register_style( 'isotope-css', get_stylesheet_directory_uri() . '/css/isotope.css' );
+ 
+    wp_enqueue_script('isotope-init');
+    wp_enqueue_style('isotope-css');
+}
+ 
+add_action( 'wp_enqueue_scripts', 'add_isotope' );
+
+
+/**
+ * Magnific for lightbox popup
+ */
+
+
+function enqueue_magnificpopup_styles() {
+    wp_register_style('magnific_popup_style', get_stylesheet_directory_uri().'/assets/css/magnific-popup.css', array('YOUR-THEME-STYLE-NAME'));
+    wp_enqueue_style('magnific_popup_style');
+}
+
+add_action('wp_enqueue_scripts', 'enqueue_magnificpopup_styles');
+ 
+
+function enqueue_magnificpopup_scripts() {
+    wp_register_script('magnific_popup_script', get_stylesheet_directory_uri().'/assets/js/jquery.magnific-popup.js', array('jquery'));
+    wp_enqueue_script('magnific_popup_script');
+    wp_register_script('magnific_init_script', get_stylesheet_directory_uri().'/assets/js/jquery.magnific-init.js', array('jquery'));
+    wp_enqueue_script('magnific_init_script');
+}
+
+add_action('wp_enqueue_scripts', 'enqueue_magnificpopup_scripts');
+
+
 
 add_action( 'tha_head_bottom', 'aj_add_selectivizr' );
 
