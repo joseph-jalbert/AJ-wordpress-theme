@@ -33,7 +33,7 @@
 		@include media($md) {
 			@include fontSize(25px);
 		}
-		font-family: $content;
+		font-family: $title;
 		font-style: italic;
 	}
 }

@@ -72,6 +72,10 @@ ul.nav-menu li.current_page_item {
 	width: 100%;
 }
 
+div.menu-navigation-container {
+	margin-left: 17%;
+}
+
 nav.post-navigation {
 	@include fill-parent;
 }

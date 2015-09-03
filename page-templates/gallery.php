@@ -13,7 +13,11 @@ get_header(); ?>
 <?php 
 
 
-$images = get_field('drawings');
+if($pagename == 'drawings') {
+    $images = get_field('drawings');
+} elseif ($pagename == 'paintings') {
+    $images = get_field('paintings');
+}
 
 
 if( $images ): ?>
@@ -28,5 +32,6 @@ if( $images ): ?>
         <?php endforeach; ?>
     </div>
 <?php endif; ?>
+
 
 <?php get_footer(); ?>
