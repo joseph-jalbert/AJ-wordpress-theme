@@ -384,9 +384,77 @@ function enqueue_magnificpopup_scripts() {
     wp_enqueue_script('magnific_init_script');
 }
 
-add_action('wp_enqueue_scripts', 'enqueue_magnificpopup_scripts');
+add_action('wp_enqueue_scripts', 'enqueue_magnificpopup_scripts'); 
+
+//CONTACT FORM, THOMASRUBY TUTORIAL
+
+function your_scripts() {
+	wp_register_script( 'contact_form_script', get_template_directory_uri() . '/assets/js/contact.js', array('jquery'));
+	wp_enqueue_script( 'contact_form_script');
+	wp_localize_script( 'contact_form_script', 'MyAjax', array(
+	// URL to wp-admin/admin-ajax.php to process data
+	'ajaxurl' => admin_url( 'admin-ajax.php' ),
+
+	// Creates a random string to test against for security purposes
+	'security' => wp_create_nonce( 'my-special-string' )
+	));
+	}
+add_action( 'wp_enqueue_scripts', 'your_scripts' );
 
 
+function contact_ajax(){
+	wp_verify_nonce( 'my-special-string', 'security' );
+	$fname = htmlspecialchars(stripslashes(trim($_POST['fname'])));
+	$email = htmlspecialchars(stripslashes(trim($_POST['email'])));
+	$message = htmlspecialchars(stripslashes(trim($_POST['message'])));
+	
+	$errors = array();
+	if(strlen($fname) < 4){
+		$errors[] = "Please Enter Your Full Name";
+	}
+	if(filter_var($email, FILTER_VALIDATE_EMAIL)) {
+	
+	} else {
+		$errors[] = "Please Enter A Valid Email";
+	}
+	
+	if($errors){
+		$error_encode = "<div class='form_errors'>";
+		foreach($errors as $error){
+			$error_encode .= "$error<br/>";
+		}
+		$error_encode .= "</div>";
+		echo json_encode("$error_encode");
+		die();
+	} else {
+ 
+		
+		$email_message  = "<strong>Name:</strong> $fname<br/>";
+		$email_message .= "<strong>Email:</strong> $email<br/>";
+		$email_message .= "<strong>Message:</strong> $message<br/>";
+ 
+ 
+		$mail_send = wp_mail( 'joseph.a.jalbert@gmail.com', 'Your Web Contact Form', $email_message, 'no-reply@yourdomain.com' );
+		
+ 
+		if($mail_send){
+			echo json_encode("<div class='form_success'>Success! You Will Hear From Us Shortly</div><script>$('#contact')[0].reset();</script>");
+			die();
+		}
+	}	
+	
+}
+ 
+add_action( 'wp_ajax_contact_ajax', 'contact_ajax' );
+add_action( 'wp_ajax_nopriv_contact_ajax', 'contact_ajax' );
+
+
+
+
+
+// add_action('wp_enqueue_scripts', 'enqueue_contact_script');
+
+// end contact form stuff
 
 add_action( 'tha_head_bottom', 'aj_add_selectivizr' );
 
