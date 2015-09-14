@@ -4,12 +4,14 @@ jQuery(document).ready(function($) {
         var fname = $('#fname').val();
 		var email = $('#email').val();
 		var message = $('#message').val();
+		var pot = $('#pot').val();
 		var data = {
 		  		action: 'contact_ajax',
 		  		security : MyAjax.security,
 		  		fname: fname,
 		  		email: email,
-		  		message: message
+		  		message: message,
+		  		pot: pot
 		 };
 		 
 		 $.post(MyAjax.ajaxurl, data, function(response) {

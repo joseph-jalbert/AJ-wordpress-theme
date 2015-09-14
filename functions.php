@@ -407,6 +407,7 @@ function contact_ajax(){
 	$fname = htmlspecialchars(stripslashes(trim($_POST['fname'])));
 	$email = htmlspecialchars(stripslashes(trim($_POST['email'])));
 	$message = htmlspecialchars(stripslashes(trim($_POST['message'])));
+	$pot = htmlspecialchars(stripslashes(trim($_POST['pot'])));
 
 	$nonce = $_POST['security'];
 	
@@ -421,6 +422,10 @@ function contact_ajax(){
 	}
 	if(!wp_verify_nonce( $nonce, 'my-special-string' )) {
 		$errors[] = "Something went wrong";
+	}
+
+	if($pot != '') {
+		$errors[] = "a field was filled out that should not have been";
 	}
 	
 	if($errors){
