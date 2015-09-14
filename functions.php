@@ -403,10 +403,12 @@ add_action( 'wp_enqueue_scripts', 'your_scripts' );
 
 
 function contact_ajax(){
-	wp_verify_nonce( 'my-special-string', 'security' );
+	
 	$fname = htmlspecialchars(stripslashes(trim($_POST['fname'])));
 	$email = htmlspecialchars(stripslashes(trim($_POST['email'])));
 	$message = htmlspecialchars(stripslashes(trim($_POST['message'])));
+
+	$nonce = $_POST['security'];
 	
 	$errors = array();
 	if(strlen($fname) < 4){
@@ -416,6 +418,9 @@ function contact_ajax(){
 	
 	} else {
 		$errors[] = "Please Enter A Valid Email";
+	}
+	if(!wp_verify_nonce( $nonce, 'my-special-string' )) {
+		$errors[] = "Something went wrong";
 	}
 	
 	if($errors){
