@@ -75,6 +75,7 @@ and Blueprint http://www.blueprintcss.org/
 6.0 Layout and Structure
 --------------------------------------------------------------*/
 @import "layouts/structure";
+@import "base/forms";
 
 	/*--------------------------------------------------------------
 	6.1 Layout and Structure
@@ -98,6 +99,8 @@ and Blueprint http://www.blueprintcss.org/
 	@import "layouts/template-2col-l-sidebar";
 	@import "layouts/template-2col-r-sidebar";
 	@import "layouts/template-full-width";
+	@import "layouts/contact";
+	@import "layouts/gallery";
 
 	/*--------------------------------------------------------------
 	6.5 Sidebar

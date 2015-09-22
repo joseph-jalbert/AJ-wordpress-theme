@@ -72,10 +72,6 @@ ul.nav-menu li.current_page_item {
 	width: 100%;
 }
 
-div.menu-navigation-container {
-	margin-left: 17%;
-}
-
 nav.post-navigation {
 	@include fill-parent;
 }
@@ -94,4 +90,45 @@ nav.post-navigation {
 		}
 	}
 }
+
+// put navbar in grid
+
+
+div.menu-navigation-container {
+	@include span-columns(4);
+  	@include shift(1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

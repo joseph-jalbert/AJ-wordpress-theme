@@ -1,0 +1,15 @@
+// hide honeypot
+
+#pot {
+	display: none;
+}
+
+// put form in grid
+
+form#contact {
+  @include span-columns(3);
+  @include shift(1);
+  margin-top: 4%;
+}
+
+

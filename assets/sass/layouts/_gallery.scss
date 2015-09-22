@@ -1,0 +1,12 @@
+/* =Masonry
+----------------------------------------------- */
+
+div#container {
+	margin-top: 5%;
+	@include span-columns(6);
+	@include shift(1);
+}
+
+div.photo {
+	width: 22%;
+}
