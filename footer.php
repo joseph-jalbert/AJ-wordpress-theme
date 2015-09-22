@@ -19,11 +19,8 @@
 					<a class="wordpress" href="http://wordpress.org/" rel="generator"><?php printf( __( 'Proudly powered by %s WordPress', 'some-like-it-neat' ), '<span class="genericon genericon-wordpress"></span>' ); ?></a>
 					<span class="sep"> | </span>
 				<?php endif; ?>
-
-				<?php echo esc_attr( get_theme_mod( 'aj_footer_colophon', __( 'AJ, by Joe Jalbert', 'some-like-it-neat' ) ) );  ?><br />
-
 			</div><!-- .site-info -->
-		<?php tha_footer_bottom(); ?>
+		
 		</footer><!-- #colophon -->
 		<?php tha_footer_after(); ?>
 	</div><!-- .wrap -->
