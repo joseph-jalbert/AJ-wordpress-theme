@@ -12,4 +12,8 @@ jQuery(function ($) {
 		masonry: { columnWidth: $container.width() / 4 }
 		});
 	});
+
+	// $(window).smartresize(function(){
+	// 	masonry: { columnWidth: $container.width() / 4 }
+	// });
 });

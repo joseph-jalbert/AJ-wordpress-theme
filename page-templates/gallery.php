@@ -26,7 +26,7 @@ if( $images ): ?>
             <a class= "pop" href="<?php echo $image['url']; ?>" class="lightbox-link" title="<?php echo $image['caption']; ?>"
             data-description="<?php echo $image['description']; ?>">
                 <div class="image-wrap photo">
-                    <img src="<?php echo $image['sizes']['medium']; ?>" alt="<?php echo $image['alt']; ?>" />
+                    <img src="<?php echo $image['sizes']['large']; ?>" alt="<?php echo $image['alt']; ?>" />
                 </div>
             </a>
         <?php endforeach; ?>
