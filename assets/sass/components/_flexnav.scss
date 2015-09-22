@@ -1,6 +1,6 @@
 /* Flexnav Base Styles */
 
-$nav_text: gray;
+$nav_text: black;
 $top_level: #999;
 $second_level: #333;
 $third_level: #666;
@@ -54,11 +54,8 @@ $fourth_level: #999;
 		color: $nav_text;
 		white-space: nowrap;
 		&:hover {
-			color: green;
+			color: gray;
 		}
-		 &:focus {
-		 	background: #fff;
-		 }
 	}
 	li ul {
 		display: none;
