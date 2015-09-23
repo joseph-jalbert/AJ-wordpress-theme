@@ -386,7 +386,7 @@ function enqueue_magnificpopup_scripts() {
 
 add_action('wp_enqueue_scripts', 'enqueue_magnificpopup_scripts'); 
 
-//CONTACT FORM, THOMASRUBY TUTORIAL
+//CONTACT FORM, THOMASRUDY TUTORIAL
 
 function your_scripts() {
 	wp_register_script( 'contact_form_script', get_template_directory_uri() . '/assets/js/contact.js', array('jquery'));
@@ -439,16 +439,16 @@ function contact_ajax(){
 	} else {
  
 		
-		$email_message  = "<strong>Name:</strong> $fname<br/>";
-		$email_message .= "<strong>Email:</strong> $email<br/>";
-		$email_message .= "<strong>Message:</strong> $message<br/>";
+		$email_message  = "Name:$fname";
+		$email_message .= "Email:$email";
+		$email_message .= "Message:$message";
  
  
 		$mail_send = wp_mail( 'joseph.a.jalbert@gmail.com', 'Your Web Contact Form', $email_message, 'no-reply@yourdomain.com' );
 		
  
 		if($mail_send){
-			echo json_encode("<div class='form_success'>Success! You Will Hear From Us Shortly</div><script>$('#contact')[0].reset();</script>");
+			echo json_encode("<div class='form_success'>Success! You Will Hear From Us Shortly</div><script>jQuery('#contact')[0].reset();</script>");
 			die();
 		}
 	}	

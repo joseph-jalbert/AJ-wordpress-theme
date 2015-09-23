@@ -19,14 +19,16 @@
 					<a class="wordpress" href="http://wordpress.org/" rel="generator"><?php printf( __( 'Proudly powered by %s WordPress', 'some-like-it-neat' ), '<span class="genericon genericon-wordpress"></span>' ); ?></a>
 					<span class="sep"> | </span>
 				<?php endif; ?>
+				<br>
+				<br>
+				<br>
+				<br>
 			</div><!-- .site-info -->
 		
 		</footer><!-- #colophon -->
 		<?php tha_footer_after(); ?>
 	</div><!-- .wrap -->
 </div><!-- #page -->
-
-
 <?php tha_body_bottom(); ?>
 <?php wp_footer(); ?>
 </body>

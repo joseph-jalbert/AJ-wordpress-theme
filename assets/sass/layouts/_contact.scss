@@ -13,3 +13,10 @@ form#contact {
 }
 
 
+@media (max-width: 800px) {
+	form#contact {
+		@include span-columns(4);
+	}
+}
+
+

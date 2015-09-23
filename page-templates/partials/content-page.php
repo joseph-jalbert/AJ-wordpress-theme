@@ -19,7 +19,6 @@
 	<?php the_content(); ?>
 
 	</div><!-- .entry-content -->
-	<?php edit_post_link( __( 'Edit', 'some-like-it-neat' ), '<footer class="entry-meta"><span class="edit-link">', '</span></footer>' ); ?>
+	
 	<?php tha_entry_bottom(); ?>
 </article><!-- #post-## -->
-<?php tha_entry_after(); ?>

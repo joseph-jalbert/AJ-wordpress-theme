@@ -1,9 +1,9 @@
+// PUT HOME PAGE IMAGE IN GRID
 
-
-// center home page image
-
-#post-25 > div > p {
-	margin-left: 20%;
+#post-25 > div img {
+	@include span-columns(4);
+	@include shift(1);
+	border-radius: 5px;
 }
 // 
 

@@ -120,7 +120,8 @@ $fourth_level: #999;
 	color: $nav_text;
 	cursor: pointer;
 	border-bottom: 1px solid rgba(0,0,0,.2);
-	width: 100%;
+	@include span-columns(4);
+  	@include shift(1);
 
 	&.one-page {
 		position: fixed;
@@ -187,9 +188,9 @@ $fourth_level: #999;
 			position: relative;
 			list-style: none;
 			@include float(left);
-			display: block;
+			display: inline;
 			overflow: visible;
-			width: 15%;
+			margin-right: 5%;
 		}
 		
 		li > ul {
