@@ -448,7 +448,7 @@ function contact_ajax(){
 		
  
 		if($mail_send){
-			echo json_encode("<div class='form_success'>Success! You Will Hear From Us Shortly</div><script>jQuery('#contact')[0].reset();</script>");
+			echo json_encode("<div class='form_success'>Thanks for checking out my art, I'll be in touch soon.</div><script>jQuery('#contact')[0].reset();</script>");
 			die();
 		}
 	}	
