@@ -103,7 +103,6 @@ a, a:visited {
 	&:hover {
 		@include transition (all 200ms ease-in-out);
 		color: $link-color;
-    text-decoration: underline;
 	}
 }
 ul {
