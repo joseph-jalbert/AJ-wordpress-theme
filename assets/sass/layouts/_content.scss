@@ -1,7 +1,7 @@
 // PUT HOME PAGE IMAGE IN GRID
 
 #post-25 > div img {
-	@include span-columns(4);
+	@include span-columns(5);
 	@include shift(1);
 	border-radius: 5px;
 }

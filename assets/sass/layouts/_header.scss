@@ -1,5 +1,7 @@
+// put title in grid
+
 div.site-title {
-	@include span-columns(4);
+	@include span-columns(5);
 	@include shift(1);
 }
 
