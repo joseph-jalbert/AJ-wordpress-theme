@@ -1,11 +1,11 @@
-jQuery(function ($) {
+// jQuery(function ($) {
 
-	var $container = $(#'container');
-	$container.isotope({
-		itemSelector : '.photo',
-		layoutMode: 'masonry'
-	});
+// 	var $container = $(#'container');
+// 	$container.isotope({
+// 		itemSelector : '.photo',
+// 		layoutMode: 'masonry'
+// 	});
 
 
-});
+// });
 

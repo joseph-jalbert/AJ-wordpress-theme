@@ -77,32 +77,37 @@ gulp.task( 'phpcs', function() {
  * Looking at src/sass and compiling the files into Expanded format, Autoprefixing and sending the files to the build folder
 */
 gulp.task('styles', function () {
+
 	return gulp.src([source+'sass/**/*.scss'])
-		.pipe(plumber())
-		.pipe(sourcemaps.init())
-			.pipe(sass({
-				// outputStyle: 'compressed',
-				errLogToConsole: true,
-				outputStyle: 'nested',
-				precision: 10
-			}))
-		.pipe(sourcemaps.write({includeContent: false}))
-		.pipe(sourcemaps.init({loadMaps: true}))
-		.pipe(autoprefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'))
-		.pipe(sourcemaps.write('.'))
-		.pipe(plumber.stop())
-		.pipe(gulp.dest(source+'css'))
-		.pipe(filter('**/*.css')) // Filtering stream to only css files
-		.pipe(cmq()) // Combines Media Queries
-		.pipe(reload({stream:true})) // Inject Styles when style file is created
-		.pipe(rename({ suffix: '-min' }))
-		.pipe(minifycss({
-			maxLineLen: 80
-		}))
-		.pipe(gulp.dest(source+'css'))
-		.pipe(reload({stream:true})) // Inject Styles when min style file is created
-		.pipe(notify({ message: 'Styles task complete', onLast: true }))
+    .pipe(concat('style.css'))
+		.pipe(gulp.dest('./assets/css/'));
 });
+// 	return gulp.src([source+'sass/**/*.scss'])
+// 		.pipe(plumber())
+// 		.pipe(sourcemaps.init())
+// 			.pipe(sass({
+// 				// outputStyle: 'compressed',
+// 				errLogToConsole: true,
+// 				outputStyle: 'nested',
+// 				precision: 10
+// 			}))
+// 		.pipe(sourcemaps.write({includeContent: false}))
+// 		.pipe(sourcemaps.init({loadMaps: true}))
+// 		.pipe(autoprefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'))
+// 		.pipe(sourcemaps.write('.'))
+// 		.pipe(plumber.stop())
+// 		.pipe(gulp.dest(source+'css'))
+// 		.pipe(filter('**/*.css')) // Filtering stream to only css files
+// 		.pipe(cmq()) // Combines Media Queries
+// 		.pipe(reload({stream:true})) // Inject Styles when style file is created
+// 		.pipe(rename({ suffix: '-min' }))
+// 		.pipe(minifycss({
+// 			maxLineLen: 80
+// 		}))
+// 		.pipe(gulp.dest(source+'css'))
+// 		.pipe(reload({stream:true})) // Inject Styles when min style file is created
+// 		.pipe(notify({ message: 'Styles task complete', onLast: true }))
+// });
 
 /**
  * Scripts

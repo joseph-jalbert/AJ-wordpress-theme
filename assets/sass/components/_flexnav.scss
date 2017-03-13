@@ -54,7 +54,7 @@ $fourth_level: #999;
 		color: $nav_text;
 		white-space: nowrap;
 		&:hover {
-			color: #018;
+			font-style: italic;
 		}
 	}
 	li ul {
@@ -192,7 +192,7 @@ $fourth_level: #999;
 			overflow: visible;
 			margin-right: 5%;
 		}
-		
+
 		li > ul {
 			position: absolute;
 			top: auto;
