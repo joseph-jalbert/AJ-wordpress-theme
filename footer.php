@@ -24,7 +24,7 @@
 				<br>
 				<br>
 			</div><!-- .site-info -->
-		
+
 		</footer><!-- #colophon -->
 		<?php tha_footer_after(); ?>
 	</div><!-- .wrap -->
