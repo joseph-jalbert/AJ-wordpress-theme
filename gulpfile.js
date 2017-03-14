@@ -318,8 +318,8 @@ var sort         = require('gulp-sort'); // Recommended to prevent unnecessary c
   * Watches for file changes and runs specific tasks.
   */
  gulp.task( 'default', ['styles', 'vendorsJs', 'customJS', 'images'], function () {
-  gulp.watch( projectPHPWatchFiles, reload ); // Reload on PHP file changes.
+  // gulp.watch( projectPHPWatchFiles, reload ); // Reload on PHP file changes.
   gulp.watch( styleWatchFiles, [ 'styles' ] ); // Reload on SCSS file changes.
-  gulp.watch( vendorJSWatchFiles, [ 'vendorsJs', reload ] ); // Reload on vendorsJs file changes.
-  gulp.watch( customJSWatchFiles, [ 'customJS', reload ] ); // Reload on customJS file changes.
+  // gulp.watch( vendorJSWatchFiles, [ 'vendorsJs', reload ] ); // Reload on vendorsJs file changes.
+  // gulp.watch( customJSWatchFiles, [ 'customJS', reload ] ); // Reload on customJS file changes.
  });
