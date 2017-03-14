@@ -12,10 +12,10 @@
 <?php get_header(); ?>
 
 <?php if (have_posts()) : ?>
-	
+
 	<?php while (have_posts()) : the_post(); ?>
 		<?php the_content(); ?>
-		
+
 		<form id="contact" novalidate="novalidate">
 			<p>Name (required)<br />
 				<input type="text" name="fname" id="fname" value="" size="40">
