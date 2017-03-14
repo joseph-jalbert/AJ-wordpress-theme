@@ -97,12 +97,10 @@ strong, b {
 }
 a, a:visited {
 	@include transition (all 200ms ease-in-out);
-	color: $primary-font-color;
 	text-decoration: none;
 
 	&:hover {
 		@include transition (all 200ms ease-in-out);
-		color: $link-color;
 	}
 }
 ul {
