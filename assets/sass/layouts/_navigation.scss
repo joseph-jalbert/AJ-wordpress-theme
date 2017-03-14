@@ -1,6 +1,16 @@
 /* =Menu
 ----------------------------------------------- */
-
+@media (max-width: 800px) {
+	nav > .menu-button {
+		@include span-columns(6);
+		padding: 1px 0;
+		text-align: left;
+		font-weight: 200;
+	}
+	.site-branding .site-title {
+		padding-bottom: 20px;
+	}
+}
 .site-main [class*="navigation"] {
 	@include fill-parent;
 	@include float(left);
@@ -98,32 +108,3 @@ div.menu-navigation-container {
 	@include span-columns(4);
   	@include shift(1);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

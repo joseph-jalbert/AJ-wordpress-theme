@@ -44,7 +44,7 @@
 
 			<nav id="primary-nav" role="navigation" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
 				<button class="menu-button">
-					<span class="dashicons <?php echo get_theme_mod( 'aj_mobile_nav_icon', 'dashicons-menu' ); ?>"></span><?php echo get_theme_mod( 'aj_mobile_nav_label', 'Menu' ); ?>
+					<?php echo get_theme_mod( 'aj_mobile_nav_label', 'menu' ); ?>
 				</button>
 		        <?php
 					wp_nav_menu(

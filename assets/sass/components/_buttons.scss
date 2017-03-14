@@ -9,16 +9,9 @@
 	padding: $button-padding;
 	transition: all 200ms ease-in-out;
 
-	&:focus {
-		background: darken( $button-bg, 5% );
-		border: solid 5px darken( $border-color, 20% );
-		border-radius: $border-radius;
-		box-shadow: none;
-		font-family: $title;
-		padding: $button-padding;
-	}
 
-	&:hover {
+	&:hover,
+	.menu-button .active {
 		background: darken( $button-bg, 5% );
 		border: solid 5px darken( $border-color, 20% );
 		border-radius: $border-radius;
@@ -42,17 +35,6 @@
 	padding: $button-padding;
 	transition: all 200ms ease-in-out;
 
-	&:focus {
-		background: darken( $button-bg, 5% );
-		border-top: solid 3px darken( $border-color, 20% );
-		border-right: solid 3px darken( $border-color, 20% );
-		border-left: solid 3px darken( $border-color, 20% );
-		border-bottom: solid 3px darken( $border-color, 20% );
-		border-radius: $border-radius;
-		box-shadow: none;
-		font-family: $title;
-		padding: $button-padding;
-	}
 
 	&:hover {
 		background: darken( $button-bg, 5% );
