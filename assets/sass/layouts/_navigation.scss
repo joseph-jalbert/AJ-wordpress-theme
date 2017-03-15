@@ -2,7 +2,7 @@
 ----------------------------------------------- */
 @media (max-width: 800px) {
 	nav > .menu-button {
-		@include span-columns(6);
+		@include span-columns(5);
 		padding: 1px 0;
 		text-align: left;
 		font-weight: 200;

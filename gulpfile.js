@@ -30,7 +30,7 @@
 // START Editing Project Variables.
 // Project related.
 var project                 = 'Amy Jalbert'; // Project Name.
-var projectURL              = 'localhost:8888'; // Project URL. Could be something like localhost:8888.
+var projectURL              = 'asdfs'; // Project URL. Could be something like localhost:8888.
 var productURL              = './'; // Theme/Plugin URL. Leave it like it is, since our gulpfile.js lives in the root folder.
 
 // Translation related.
